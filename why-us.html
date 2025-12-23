@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us | GrihSeva Home Services Gurgaon</title>
+    <meta name="description" content="Discover why GrihSeva is the preferred choice for home services in Gurgaon. Verified experts, transparent pricing, and 100% satisfaction guaranteed.">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --bg-light: #f8fafc;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --white: #ffffff;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', system-ui, sans-serif; color: var(--text-main); background: var(--bg-light); line-height: 1.6; }
+        a { text-decoration: none; transition: 0.3s; }
+
+        nav { background: var(--white); border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1200px; margin: auto; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 22px; font-weight: 800; color: var(--dark); }
+        .logo span { color: var(--primary); }
+        .nav-links a { margin-left: 24px; font-size: 14px; font-weight: 500; color: var(--text-muted); }
+        .nav-links a:hover { color: var(--primary); }
+
+        .hero { background: var(--dark); color: var(--white); padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); margin-bottom: 15px; }
+
+        .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+
+        /* Why Cards Grid */
+        .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 80px; }
+        .card { background: var(--white); padding: 40px 30px; border-radius: 16px; box-shadow: var(--shadow); border: 1px solid #f1f5f9; transition: transform 0.3s ease; }
+        .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.12);
+}
+
+        .icon {
+  width: 56px;
+  height: 56px;
+  background: #eff6ff;
+  color: var(--primary);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+        .card h3 { color: var(--dark); margin-bottom: 12px; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+
+   .hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+.hero-stats div {
+  text-align: center;
+}
+.hero-stats strong {
+  font-size: 1.6rem;
+  display: block;
+}
+.hero-stats span {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+        /* Comparison Table */
+        .comparison { background: var(--white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow); margin-bottom: 60px; overflow-x: auto; }
+        .comparison h2 { text-align: center; margin-bottom: 30px; color: var(--dark); }
+        table { width: 100%; border-collapse: collapse; min-width: 500px; }
+        th, td { padding: 18px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+        th { background: #f1f5f9; color: var(--dark); }
+        .check { color: #10b981; font-weight: bold; }
+        .cross { color: #ef4444; font-weight: bold; }
+.comparison td:nth-child(2),
+.comparison th:nth-child(2) {
+  background: #eff6ff;
+  font-weight: 600;
+}
+.check::before { content: "✔ "; }
+.cross::before { content: "✖ "; }
+
+        /* Statement */
+        .trust-statement { text-align: center; background: var(--dark); color: white; padding: 60px 40px; border-radius: 20px; }
+        .trust-statement h2 { color: var(--primary); margin-bottom: 20px; }
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 16px 40px; border-radius: 8px; font-weight: 700; margin-top: 30px; }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(37,99,235,0.4);
+}
+
+        .trust-banner {
+  background:
+    linear-gradient(to right, rgba(15,23,42,0.85), rgba(15,23,42,0.6)),
+    url("./assets/images/whyus.png") center/cover no-repeat;
+  padding: 120px 20px;
+  border-radius: 28px;
+  margin: 60px auto;
+  max-width: 1100px;
+}
+
+.trust-content {
+  max-width: 600px;
+}
+
+.trust-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+.trust-content p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+        footer { background: var(--dark); color: #94a3b8; text-align: center; padding: 40px 20px; font-size: 14px; margin-top: 80px; border-top: 1px solid #1e293b; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+        }
+        </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    
+    <header class="hero">
+  <h1>Why Choose GrihSeva?</h1>
+  <p>Trusted, verified & fast home services—built exclusively for Gurgaon homes.</p>
+
+  <div class="hero-stats">
+    <div><strong>10,000+</strong><span>Homes Served</span></div>
+    <div><strong>98%</strong><span>5★ Ratings</span></div>
+    <div><strong>60–90 min</strong><span>Response Time</span></div>
+  </div>
+</header>
+
+<section class="trust-banner">
+  <div class="trust-content">
+    <h2>Built on Trust. Powered by Local Experts.</h2>
+    <p>Every service professional is verified, trained, and accountable.</p>
+  </div>
+</section>
+
+
+<div class="container">
+    <div class="why-grid">
+        <div class="card">
+            <span class="icon">🛡️</span>
+            <h3>Verified Professionals</h3>
+            <p>Every technician is background verified and identity checked for your absolute safety.</p>
+        </div>
+        <div class="card">
+            <span class="icon">🏷️</span>
+            <h3>Transparent Pricing</h3>
+            <p>No hidden costs. Know exactly what you are paying for before the work starts.</p>
+        </div>
+        <div class="card">
+            <span class="icon">⚡</span>
+            <h3>Fast Service</h3>
+            <p>Our Gurgaon network allows us to reach your doorstep within 60-90 minutes of booking.</p>
+        </div>
+        <div class="card">
+            <span class="icon">📍</span>
+            <h3>Local Experts</h3>
+            <p>We hire experts from within Gurgaon who understand local wiring and plumbing standards.</p>
+        </div>
+        <div class="card">
+            <span class="icon">⭐</span>
+            <h3>Customer Satisfaction</h3>
+            <p>98% of our customers rate our services 5-stars. Your satisfaction is our priority.</p>
+        </div>
+        <div class="card">
+            <span class="icon">🤝</span>
+            <h3>Support After Service</h3>
+            <p>Issues after the job? Our dedicated Gurgaon support team is just a call away.</p>
+        </div>
+    </div>
+
+    <section class="comparison">
+        <h2>GrihSeva vs. Local Contractors</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>GrihSeva</th>
+                    <th>Individual Contractors</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Background Check</td>
+                    <td class="check">Verified & Safe</td>
+                    <td class="cross">Unknown</td>
+                </tr>
+                <tr>
+                    <td>Pricing</td>
+                    <td class="check">Standard & Fixed</td>
+                    <td class="cross">Variable / Bargaining</td>
+                </tr>
+                <tr>
+                    <td>Service Warranty</td>
+                    <td class="check">7-Day Warranty</td>
+                    <td class="cross">None</td>
+                </tr>
+                <tr>
+                    <td>Professionalism</td>
+                    <td class="check">Trained Experts</td>
+                    <td class="cross">Unpredictable</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+   <div class="trust-statement">
+  <h2>Your Home Deserves the Best</h2>
+  <p>Book a verified professional today and experience worry-free home services.</p>
+  <a href="index.html#contact" class="btn">Book Trusted Expert</a>
+</div>
+
+
+<footer>
+    © 2025 GrihSeva • The Standard for Gurgaon Home Services
+</footer>
+
+</body>
+    <script>
+    fetch("navbar.html").then(r=>r.text()).then(d=>document.getElementById("navbar").innerHTML=d);
+    </script>
+</html>

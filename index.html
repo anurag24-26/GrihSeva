@@ -4,118 +4,301 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO META -->
-  <title>Doorstep Home Services in Gurgaon | Electrician, Plumber, AC Repair</title>
-  <meta name="description" content="Doorstep home services in Gurgaon. Book trusted electricians, plumbers, AC repair, RO service, and carpenters at your home." />
-  <meta name="keywords" content="doorstep services gurgaon, electrician gurgaon, plumber gurgaon, ac repair gurgaon, home services near me" />
-  <meta name="author" content="HomeService" />
+  <title>GrihSeva | Professional Doorstep Home Services in Gurgaon</title>
+  <meta name="description" content="Trusted doorstep home services in Gurgaon. Verified electricians, plumbers, AC repair, and carpenters. Same-day service in DLF, Sohna Road, and more." />
+  <meta name="keywords" content="home services gurgaon, electrician gurgaon, plumber gurgaon, ac repair gurgaon, ro service gurgaon, local handyman haryana" />
+  <meta name="author" content="GrihSeva" />
 
-  <!-- Open Graph (for sharing) -->
-  <meta property="og:title" content="Doorstep Home Services in Gurgaon" />
-  <meta property="og:description" content="Trusted local professionals for electrician, plumber, AC & RO repair at your doorstep." />
+  <meta property="og:title" content="GrihSeva - Professional Home Services in Gurgaon" />
+  <meta property="og:description" content="Verified local professionals for electrical, plumbing, and AC repair at your home." />
   <meta property="og:type" content="website" />
 
-  <!-- BASIC STYLING -->
   <style>
+    /* LOCALTRUST THEME CONFIGURATION */
+    :root {
+      --primary: #2563eb;      /* Electric Blue */
+      --dark: #0f172a;         /* Deep Blue */
+      --bg-light: #f8fafc;     /* Light Gray */
+      --text-main: #111827;    /* Dark Gray */
+      --text-muted: #4b5563;
+      --white: #ffffff;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--text-main);
       line-height: 1.6;
-      color: #222;
+      background: var(--bg-light);
     }
-    header, section, footer {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+
+    a { text-decoration: none; color: inherit; transition: 0.2s; }
+
+  
+    /* HERO SECTION */
     header {
-      background: #0f172a;
-      color: #fff;
+      background: var(--dark);
+      background-image: radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.2) 0%, transparent 50%);
+      color: var(--white);
       text-align: center;
+      padding: 100px 20px;
     }
-    h1, h2, h3 {
-      color: #0f172a;
+    header h1 { 
+      font-size: clamp(2rem, 5vw, 3.2rem); 
+      margin: 0 0 16px 0; 
+      font-weight: 800;
+      letter-spacing: -1px;
     }
-    header h1 {
-      color: #fff;
-      font-size: 2.2rem;
+    header p { 
+      font-size: 1.1rem; 
+      opacity: 0.8; 
+      max-width: 600px; 
+      margin: 0 auto; 
     }
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li {
-      padding: 8px 0;
-    }
-    .cta {
-      background: #2563eb;
-      color: #fff;
-      padding: 12px 20px;
+    .cta-btn {
       display: inline-block;
-      text-decoration: none;
-      margin-top: 15px;
-      border-radius: 4px;
+      margin-top: 32px;
+      background: var(--primary);
+      color: var(--white);
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
     }
-    footer {
-      background: #f1f5f9;
+    .cta-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h2 { 
+      font-size: 2rem; 
+      font-weight: 700; 
+      color: var(--dark); 
+      margin-bottom: 40px; 
+      text-align: center; 
+    }
+
+    /* SERVICES GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 40px 30px;
       text-align: center;
-      font-size: 14px;
+      box-shadow: var(--shadow);
+      border: 1px solid transparent;
+      transition: 0.3s;
     }
+    .service-card:hover { border-color: var(--primary); }
+    .service-card h3 { font-size: 1.25rem; margin-bottom: 12px; color: var(--dark); }
+    .service-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
+    .service-link {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* WHY SECTION */
+    .why-section { background: var(--white); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .why-item {
+      padding: 24px;
+      background: var(--bg-light);
+      border-radius: 8px;
+      font-weight: 600;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+    }
+    .why-item::before {
+      content: "✓";
+      color: var(--primary);
+      margin-right: 12px;
+      font-size: 1.2rem;
+    }
+
+    /* PROCESS STEPS */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    .step-num {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px auto;
+      font-weight: bold;
+    }
+
+    /* CONTACT SECTION */
+    .contact-block {
+      background: var(--dark);
+      border-radius: 16px;
+      padding: 60px 20px;
+      color: var(--white);
+      text-align: center;
+    }
+    .contact-details {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .contact-details div { font-size: 1.1rem; }
+    .contact-details b { color: var(--primary); display: block; margin-bottom: 4px; font-size: 0.8rem; text-transform: uppercase; }
+
+    footer {
+      background: #020617;
+      color: #94a3b8;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      border-top: 1px solid #1e293b;
+    }
+
+   .hero-image {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto; /* maintains aspect ratio */
+  display: block;
+  object-fit: cover; /* ensures cover style */
+}
+
+
   </style>
 </head>
 
 <body>
+<div id="navbar"></div>
+
 
 <header>
-  <h1>Doorstep Home Services in Gurgaon</h1>
-  <p>Electrician • Plumber • AC Repair • RO Service • Carpenter</p>
-  <a href="#contact" class="cta">Contact for Service</a>
+ 
+  <h1>Premium Home Services in Gurgaon</h1>
+   <div class="hero-image">
+    <img src="assets/images/hero.png" alt="">
+  </div>
+  <p>Your trusted local partner for Electricians, Plumbers, AC Repair, and RO service. Verified professionals at your doorstep.</p>
+  <a href="tel:+917985555982" class="cta-btn">Book Your Service</a>
+  
+
 </header>
 
-<section>
-  <h2>Trusted Local Home Services</h2>
-  <p>
-    We help connect customers with reliable local service professionals in Gurgaon.
-    All services are provided at your doorstep with safety, transparency, and quick response.
-  </p>
+<section class="container" id="services">
+  <h2>Reliable Doorstep Solutions</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Electrician</h3>
+      <p>Expert wiring, fault finding, switch repairs, and appliance installation.</p>
+      <a href="electrician.html" class="service-link">View Pricing →</a>
+    </div>
+    <div class="service-card">
+      <h3>Plumber</h3>
+      <p>Leakage detection, pipe fitting, bathroom fixtures, and drainage cleaning.</p>
+      <a href="plumber.html" class="service-link">View Pricing →</a>
+    </div>
+    <div class="service-card">
+      <h3>AC Repair</h3>
+      <p>Deep chemical cleaning, gas charging, and PCB repair for all brands.</p>
+      <a href="ac-repair.html" class="service-link">View Pricing →</a>
+    </div>
+    <div class="service-card">
+      <h3>RO Service</h3>
+      <p>Genuine filter replacement and TDS adjustment for pure drinking water.</p>
+      <a href="#" class="service-link">View Pricing →</a>
+    </div>
+    <div class="service-card">
+      <h3>Carpenter</h3>
+      <p>Furniture assembly, door lock repair, and custom woodwork services.</p>
+      <a href="#" class="service-link">View Pricing →</a>
+    </div>
+  </div>
 </section>
 
-<section class="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li>✔ <a href="electrician.html">Electrician Services</a></li>
-    <li>✔ <a href="plumber.html">Plumber Services</a></li>
-    <li>✔ <a href="serviceone.html">AC Repair & Installation</a></li>
-    <li>✔ RO & Water Purifier Repair</li>
-    <li>✔ Carpenter & Handyman Services</li>
-  </ul>
+<section class="why-section" id="why">
+  <div class="container">
+    <h2>The GrihSeva Trust</h2>
+    <div class="why-grid">
+      <div class="why-item">Background Verified Pros</div>
+      <div class="why-item">Same-Day Doorstep Visit</div>
+      <div class="why-item">Upfront Transparent Pricing</div>
+      <div class="why-item">Post-Service Warranty</div>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>How It Works</h2>
-  <p>1. Choose the service you need</p>
-  <p>2. Contact us via phone or email</p>
-  <p>3. A local professional visits your home</p>
+<section class="container">
+  <h2>Simple 3-Step Process</h2>
+  <div class="steps-grid">
+    <div>
+      <div class="step-num">1</div>
+      <h4>Pick Service</h4>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">Select the help you need</p>
+    </div>
+    <div>
+      <div class="step-num">2</div>
+      <h4>Schedule</h4>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">Book a time that suits you</p>
+    </div>
+    <div>
+      <div class="step-num">3</div>
+      <h4>Relax</h4>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">Expert arrives and fixes it</p>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Service Areas</h2>
-  <p>
-    We currently serve Gurgaon, Sohna, Badshahpur, Bhondsi, and nearby locations in Haryana.
-  </p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
-  <p><strong>Email:</strong> support@yourdomain.com</p>
-  <p><strong>Location:</strong> Gurgaon, Haryana, India</p>
+<section class="container" id="contact">
+  <div class="contact-block">
+    <h2>Ready to get started?</h2>
+    <p>Contact our Gurgaon support team for immediate assistance.</p>
+    <div class="contact-details">
+      <div><b>Phone</b>+91 7985555982</div>
+      <div><b>WhatsApp</b>+91 7985555982</div>
+      <div><b>Email</b>anuragtripathi2602@gmail.com</div>
+    </div>
+    <p style="margin-top: 40px; font-size: 0.85rem; opacity: 0.6;">Serving DLF, Sohna Road, Cyber Hub, and Sector 14-110.</p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2025 Doorstep Home Services</p>
-  <p>We help offline businesses become online-first.</p>
+  <p>© 2025 GrihSeva Home Services Gurgaon • Built for Trust • Clean Blue Edition</p>
 </footer>
 
 </body>
+<script>
+fetch("navbar.html").then(r=>r.text()).then(d=>document.getElementById("navbar").innerHTML=d);
+</script>
 </html>

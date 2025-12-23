@@ -9,10 +9,6 @@
         :root { --primary: #007bff; --dark: #333; --light: #f4f4f4; --white: #fff; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
         body { line-height: 1.6; color: var(--dark); }
-        header { background: var(--white); padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: auto; }
-        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-decoration: none; }
-        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--dark); font-weight: 500; }
         .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1599939331503-ef01f7789ad3?auto=format&fit=crop&w=1200&q=80'); background-size: cover; color: var(--white); padding: 100px 20px; text-align: center; }
         .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
         .btn { background: var(--primary); color: var(--white); padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; transition: 0.3s; }
@@ -27,17 +23,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">CityFix Pro</a>
-            <div class="nav-links">
-                <a href="plumber.html">Plumbing</a>
-                <a href="electrician.html">Electrical</a>
-                <a href="#contact">Book Now</a>
-            </div>
-        </nav>
-    </header>
-
+   <div id="navbar"></div>
+   
+   
     <section class="hero">
         <h1>Fast AC Repair & Service</h1>
         <p>Beat the heat with 24/7 emergency cooling solutions in your city.</p>
@@ -93,4 +81,7 @@
         <p>&copy; 2025 CityFix Pro Services. All Rights Reserved.</p>
     </footer>
 </body>
+<script>
+fetch("navbar.html").then(r=>r.text()).then(d=>document.getElementById("navbar").innerHTML=d);
+</script>
 </html>

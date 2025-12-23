@@ -9,10 +9,7 @@
         :root { --primary: #ffc107; --dark: #212529; --white: #fff; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
         body { line-height: 1.6; color: var(--dark); }
-        header { background: var(--white); padding: 1rem; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: auto; }
-        .logo { font-size: 1.5rem; font-weight: bold; color: var(--dark); text-decoration: none; border-bottom: 3px solid var(--primary); }
-        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--dark); }
+      
         .hero { background: #2c3e50; color: var(--white); padding: 80px 20px; text-align: center; }
         .hero h1 { font-size: 2.5rem; color: var(--primary); }
         .btn { background: var(--primary); color: var(--dark); padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
@@ -24,18 +21,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">CityFix Pro</a>
-            <div class="nav-links">
-                <a href="index.html">AC Repair</a>
-                <a href="plumber.html">Plumbing</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
-
-    <section class="hero">
+   <div id="navbar"></div>
+   
+   <section class="hero">
         <h1>Safety-First Electrical Services</h1>
         <p>Short circuits? Wiring issues? Our certified electricians are 1 call away.</p>
         <a href="tel:+1234567890" class="btn">Call Electrician Now</a>
@@ -72,4 +60,7 @@
         <p>&copy; 2025 CityFix Pro Services. Your Trusted Local Electricians.</p>
     </footer>
 </body>
+        <script>
+        fetch("navbar.html").then(r=>r.text()).then(d=>document.getElementById("navbar").innerHTML=d);
+        </script>
 </html>

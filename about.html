@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GrihSeva | Our Story & Mission for Home Services in Gurgaon</title>
+    <meta name="description" content="Learn about GrihSeva, Gurgaon's most trusted platform for home services. Our mission is to connect local professionals with households for reliable repairs.">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --bg-light: #f8fafc;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --white: #ffffff;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', system-ui, sans-serif; color: var(--text-main); background: var(--bg-light); line-height: 1.6; }
+        a { text-decoration: none; transition: 0.3s; }
+
+        /* Hero Section */
+        .hero { background: var(--dark); color: var(--white); padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); margin-bottom: 15px; }
+        .hero p { opacity: 0.8; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+        .container { max-width: 1000px; margin: auto; padding: 60px 20px; }
+
+        /* Story Section */
+        .content-section { background: var(--white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow); margin-bottom: 40px; }
+        .content-section h2 { color: var(--dark); margin-bottom: 20px; font-size: 1.8rem; }
+        .content-section p { color: var(--text-muted); margin-bottom: 20px; font-size: 1.05rem; }
+.about-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 30px 0 50px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.75),
+    rgba(15, 23, 42, 0.15)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+}
+
+.image-overlay span {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+        /* Mission/Vision Grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .grid-card { background: var(--bg-light); padding: 30px; border-radius: 12px; border-top: 4px solid var(--primary); }
+        .grid-card h3 { margin-bottom: 15px; color: var(--dark); }
+
+        /* Safety focus */
+        .safety-highlight { background: #eff6ff; border: 1px dashed var(--primary); padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center; }
+
+        /* Footer CTA */
+        .cta-box { text-align: center; padding: 60px 20px; background: var(--white); border-radius: 16px; margin-top: 60px; box-shadow: var(--shadow); }
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 16px 32px; border-radius: 8px; font-weight: 600; margin-top: 20px; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3); }
+
+        footer { background: var(--dark); color: #94a3b8; text-align: center; padding: 40px 20px; font-size: 14px; margin-top: 80px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div id="navbar"></div>
+
+
+<header class="hero">
+    <h1>About GrihSeva</h1>
+    <p>Building a bridge of trust between Gurgaon's households and skilled local professionals.</p>
+</header>
+
+
+
+<div class="container">
+    <section class="content-section">
+     
+        <h2>The Story Behind GrihSeva</h2>
+        
+
+        <p>In the bustling city of Gurgaon, finding a reliable electrician or plumber used to be a matter of luck. We realized that while there were many skilled workers and many households in need, there was no bridge of <strong>trust</strong> and <strong>professionalism</strong> connecting them.</p>
+        <p>GrihSeva was started to solve this local problem. We are a community-first platform that empowers local artisans and service providers while giving homeowners peace of mind with vetted, high-quality doorstep services.</p>
+       <div class="about-image-wrapper">
+  <img src="./assets/images/aboutus.png" alt="GrihSeva trusted home services in Gurgaon">
+  <div class="image-overlay">
+    <span>Trusted Local Professionals • Gurgaon</span>
+  </div>
+</div>
+    </section>
+
+    <div class="grid">
+        <div class="grid-card">
+            <h3>Our Mission</h3>
+            <p>To digitize the local home service industry in Gurgaon and ensure every home gets access to verified, affordable, and fast maintenance solutions.</p>
+        </div>
+        <div class="grid-card">
+            <h3>Our Vision</h3>
+            <p>To become the most trusted household name in Haryana for all repair and renovation needs through transparency and skilled labor.</p>
+        </div>
+    </div>
+
+    <section class="safety-highlight">
+        <h3>Focus on Trust & Safety</h3>
+        <p>Every professional on our platform undergoes a strict background check and skill verification process. When a GrihSeva professional enters your home, they come with a promise of safety and quality.</p>
+    </section>
+
+    <div class="cta-box">
+        <h2>Experience the Difference Today</h2>
+        <p>Join thousands of Gurgaon residents who trust GrihSeva for their daily home needs.</p>
+        <a href="index.html#contact" class="btn">Book Trusted Services</a>
+    </div>
+</div>
+
+<footer>
+    © 2025 GrihSeva • Serving Gurgaon with Pride
+</footer>
+
+</body>
+<script>
+fetch("navbar.html").then(r=>r.text()).then(d=>document.getElementById("navbar").innerHTML=d);
+</script>
+</html>

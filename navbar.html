@@ -1,0 +1,120 @@
+<style>
+  /* Beautiful Modern Navbar CSS */
+  .navbar {
+    background: rgba(15, 23, 42, 0.95); /* Deep Blue with slight transparency */
+    backdrop-filter: blur(12px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(12px);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .nav-logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #2563eb;
+    margin-right: 8px;
+    border-radius: 2px;
+    box-shadow: 0 0 15px #2563eb;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #cbd5e1; /* Soft gray-blue */
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+  }
+
+  /* Animated underline effect */
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .nav-btn {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff !important;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+    filter: brightness(1.1);
+  }
+
+  .nav-btn::after {
+    display: none !important; /* Remove underline for button */
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 5%;
+    }
+    .nav-links {
+      display: none; /* In a real project, you'd add a hamburger menu here */
+    }
+    .nav-logo {
+      font-size: 18px;
+    }
+  }
+</style>
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">GRIHSEVA</a>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="why-us.html">Why Choose Us</a>
+    <a href="services.html">Services</a>
+    <a href="#contact" class="nav-btn">Book Now</a>
+  </div>
+</nav>
