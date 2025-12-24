@@ -68,9 +68,16 @@
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 CityFix Pro Services. Professional Plumbing Experts.</p>
-    </footer>
+    <div id="footer"></div>
+
+<script>
+  fetch("/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
 </body>
         <script>
         fetch("navbar.html").then(r=>r.text()).then(d=>document.getElementById("navbar").innerHTML=d);

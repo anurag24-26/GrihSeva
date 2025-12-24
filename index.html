@@ -4,301 +4,364 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>GrihSeva | Professional Doorstep Home Services in Gurgaon</title>
-  <meta name="description" content="Trusted doorstep home services in Gurgaon. Verified electricians, plumbers, AC repair, and carpenters. Same-day service in DLF, Sohna Road, and more." />
-  <meta name="keywords" content="home services gurgaon, electrician gurgaon, plumber gurgaon, ac repair gurgaon, ro service gurgaon, local handyman haryana" />
-  <meta name="author" content="GrihSeva" />
-
-  <meta property="og:title" content="GrihSeva - Professional Home Services in Gurgaon" />
-  <meta property="og:description" content="Verified local professionals for electrical, plumbing, and AC repair at your home." />
-  <meta property="og:type" content="website" />
+  <title>GrihSeva | Trusted Home Services in Gurgaon</title>
+  <meta name="description" content="Verified electricians, plumbers, AC repair & carpenters in Gurgaon. Same-day doorstep service with transparent pricing." />
 
   <style>
-    /* LOCALTRUST THEME CONFIGURATION */
-    :root {
-      --primary: #2563eb;      /* Electric Blue */
-      --dark: #0f172a;         /* Deep Blue */
-      --bg-light: #f8fafc;     /* Light Gray */
-      --text-main: #111827;    /* Dark Gray */
-      --text-muted: #4b5563;
-      --white: #ffffff;
-      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    }
-
-    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
-    
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      color: var(--text-main);
-      line-height: 1.6;
-      background: var(--bg-light);
-    }
-
-    a { text-decoration: none; color: inherit; transition: 0.2s; }
-
   
-    /* HERO SECTION */
-    header {
-      background: var(--dark);
-      background-image: radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.2) 0%, transparent 50%);
-      color: var(--white);
-      text-align: center;
-      padding: 100px 20px;
-    }
-    header h1 { 
-      font-size: clamp(2rem, 5vw, 3.2rem); 
-      margin: 0 0 16px 0; 
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
-    header p { 
-      font-size: 1.1rem; 
-      opacity: 0.8; 
-      max-width: 600px; 
-      margin: 0 auto; 
-    }
-    .cta-btn {
-      display: inline-block;
-      margin-top: 32px;
-      background: var(--primary);
-      color: var(--white);
-      padding: 16px 32px;
-      border-radius: 8px;
-      font-weight: 600;
-      box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
-    }
-    .cta-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+:root {
+  /* Updated Palette: Electric Indigo & Slate */
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --dark: #0f172a;
+  --bg: #f8fafc;
+  --text: #1e293b;
+  --muted: #64748b;
+  --white: #ffffff;
+  --accent: #10b981; /* Success Green for accents */
+  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 20px;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    h2 { 
-      font-size: 2rem; 
-      font-weight: 700; 
-      color: var(--dark); 
-      margin-bottom: 40px; 
-      text-align: center; 
-    }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  /* Subtle grid pattern for a "tech/global" feel */
+  background-image: radial-gradient(#e2e8f0 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  color: var(--text);
+  line-height: 1.5;
+}
 
-    /* SERVICES GRID */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-    }
-    .service-card {
-      background: var(--white);
-      border-radius: 12px;
-      padding: 40px 30px;
-      text-align: center;
-      box-shadow: var(--shadow);
-      border: 1px solid transparent;
-      transition: 0.3s;
-    }
-    .service-card:hover { border-color: var(--primary); }
-    .service-card h3 { font-size: 1.25rem; margin-bottom: 12px; color: var(--dark); }
-    .service-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
-    .service-link {
-      font-weight: 700;
-      color: var(--primary);
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
+a {
+  text-decoration: none;
+  transition: 0.2s;
+}
 
-    /* WHY SECTION */
-    .why-section { background: var(--white); }
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-    .why-item {
-      padding: 24px;
-      background: var(--bg-light);
-      border-radius: 8px;
-      font-weight: 600;
-      color: var(--dark);
-      display: flex;
-      align-items: center;
-    }
-    .why-item::before {
-      content: "✓";
-      color: var(--primary);
-      margin-right: 12px;
-      font-size: 1.2rem;
-    }
-
-    /* PROCESS STEPS */
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      text-align: center;
-    }
-    .step-num {
-      width: 40px;
-      height: 40px;
-      background: var(--primary);
-      color: var(--white);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 16px auto;
-      font-weight: bold;
-    }
-
-    /* CONTACT SECTION */
-    .contact-block {
-      background: var(--dark);
-      border-radius: 16px;
-      padding: 60px 20px;
-      color: var(--white);
-      text-align: center;
-    }
-    .contact-details {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .contact-details div { font-size: 1.1rem; }
-    .contact-details b { color: var(--primary); display: block; margin-bottom: 4px; font-size: 0.8rem; text-transform: uppercase; }
-
-    footer {
-      background: #020617;
-      color: #94a3b8;
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
-      border-top: 1px solid #1e293b;
-    }
-
-   .hero-image {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto 40px;
-  border-radius: 20px;
+/* ---------- HERO ---------- */
+.hero {
+  background: radial-gradient(circle at top right, #1e293b, #0f172a);
+  color: white;
+  padding: 80px 20px; /* Reduced padding */
+  text-align: center;
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
-.hero-image img {
-  width: 100%;
-  height: auto; /* maintains aspect ratio */
-  display: block;
-  object-fit: cover; /* ensures cover style */
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
 }
 
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: var(--primary-hover);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(4px);
+}
+
+.btn.outline:hover {
+  border-color: white;
+  background: rgba(255,255,255,0.05);
+}
+
+/* ---------- LAYOUT ---------- */
+.container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 60px 20px; /* Tightened spacing */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.85rem;
+  margin-bottom: 35px; /* Reduced margin */
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.section-title span {
+  color: var(--primary);
+  position: relative;
+}
+
+/* ---------- SERVICES ---------- */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background: var(--white);
+  border: 1px solid #eef2f6;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: left; /* Alignment change for better readability */
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+
+.service:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+}
+
+.service span {
+  font-size: 1.8rem;
+  background: #f1f5f9;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.service h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+
+.service p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ---------- TRUST / PARTNERS ---------- */
+.trust {
+  background: #f1f5f9;
+  padding: 60px 20px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.trust-item {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+  border: 1px solid #e2e8f0;
+}
+
+/* ---------- HOW IT WORKS ---------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  position: relative;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-num {
+  width: 44px;
+  height: 44px;
+  background: var(--primary);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 12px auto;
+}
+
+/* ---------- CTA ---------- */
+.final-cta {
+  background: var(--dark);
+  background-image: linear-gradient(45deg, #0f172a 0%, #1e1b4b 100%);
+  color: white;
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.final-cta h2 { margin-bottom: 8px; color: white; }
+.final-cta p { margin-bottom: 24px; color: #94a3b8; }
+
+.final-cta .btn {
+  background: var(--white);
+  color: var(--dark);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #0f172a;
+  color: #64748b;
+  padding: 30px 20px;
+  border-top: 1px solid #1e293b;
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 60px 20px; }
+  .container { padding: 40px 20px; }
+}
 
   </style>
 </head>
 
 <body>
+
 <div id="navbar"></div>
 
+<!-- HERO -->
+<section class="hero">
+  <h1>Trusted Home Services in Gurgaon</h1>
+  <p>Verified electricians, plumbers, AC & RO service professionals — delivered fast at your doorstep.</p>
 
-<header>
- 
-  <h1>Premium Home Services in Gurgaon</h1>
-   <div class="hero-image">
-    <img src="assets/images/hero.png" alt="">
+  <div class="hero-actions">
+    <a href="tel:+917985555982" class="btn">Book Now</a>
+    <a href="#services" class="btn outline">View Services</a>
   </div>
-  <p>Your trusted local partner for Electricians, Plumbers, AC Repair, and RO service. Verified professionals at your doorstep.</p>
-  <a href="tel:+917985555982" class="cta-btn">Book Your Service</a>
-  
+</section>
 
-</header>
-
+<!-- SERVICES -->
 <section class="container" id="services">
-  <h2>Reliable Doorstep Solutions</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <h3>Electrician</h3>
-      <p>Expert wiring, fault finding, switch repairs, and appliance installation.</p>
-      <a href="electrician.html" class="service-link">View Pricing →</a>
-    </div>
-    <div class="service-card">
-      <h3>Plumber</h3>
-      <p>Leakage detection, pipe fitting, bathroom fixtures, and drainage cleaning.</p>
-      <a href="plumber.html" class="service-link">View Pricing →</a>
-    </div>
-    <div class="service-card">
-      <h3>AC Repair</h3>
-      <p>Deep chemical cleaning, gas charging, and PCB repair for all brands.</p>
-      <a href="ac-repair.html" class="service-link">View Pricing →</a>
-    </div>
-    <div class="service-card">
-      <h3>RO Service</h3>
-      <p>Genuine filter replacement and TDS adjustment for pure drinking water.</p>
-      <a href="#" class="service-link">View Pricing →</a>
-    </div>
-    <div class="service-card">
-      <h3>Carpenter</h3>
-      <p>Furniture assembly, door lock repair, and custom woodwork services.</p>
-      <a href="#" class="service-link">View Pricing →</a>
-    </div>
+  <h2>Our Popular Services</h2>
+
+  <div class="services">
+    <div class="service"><span>⚡</span><h3>Electrician</h3><p>Wiring, repairs & installations</p></div>
+    <div class="service"><span>🚿</span><h3>Plumber</h3><p>Leakage, fittings & drainage</p></div>
+    <div class="service"><span>❄️</span><h3>AC Repair</h3><p>Cleaning, gas refill & repair</p></div>
+    <div class="service"><span>💧</span><h3>RO Service</h3><p>Filter change & TDS setup</p></div>
+    <div class="service"><span>🪚</span><h3>Carpenter</h3><p>Furniture & door repair</p></div>
   </div>
 </section>
-
-<section class="why-section" id="why">
+<!-- TRUST -->
+<section class="trust">
   <div class="container">
-    <h2>The GrihSeva Trust</h2>
-    <div class="why-grid">
-      <div class="why-item">Background Verified Pros</div>
-      <div class="why-item">Same-Day Doorstep Visit</div>
-      <div class="why-item">Upfront Transparent Pricing</div>
-      <div class="why-item">Post-Service Warranty</div>
+    <h2 class="section-title">Why Gurgaon Trusts <span>GrihSeva</span></h2>
+
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span>🛡️</span>
+        <h4>Verified Professionals</h4>
+        <p>All experts are background checked and trained.</p>
+      </div>
+
+      <div class="trust-item">
+        <span>⚡</span>
+        <h4>Same-Day Service</h4>
+        <p>Quick response and fast issue resolution.</p>
+      </div>
+
+      <div class="trust-item">
+        <span>💰</span>
+        <h4>Transparent Pricing</h4>
+        <p>No hidden charges. Pay what you see.</p>
+      </div>
+
+      <div class="trust-item">
+        <span>🔧</span>
+        <h4>Service Warranty</h4>
+        <p>Post-service support you can rely on.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="container">
-  <h2>Simple 3-Step Process</h2>
-  <div class="steps-grid">
-    <div>
-      <div class="step-num">1</div>
-      <h4>Pick Service</h4>
-      <p style="font-size: 0.9rem; color: var(--text-muted);">Select the help you need</p>
-    </div>
-    <div>
-      <div class="step-num">2</div>
-      <h4>Schedule</h4>
-      <p style="font-size: 0.9rem; color: var(--text-muted);">Book a time that suits you</p>
-    </div>
-    <div>
-      <div class="step-num">3</div>
-      <h4>Relax</h4>
-      <p style="font-size: 0.9rem; color: var(--text-muted);">Expert arrives and fixes it</p>
+<!-- STEPS -->
+<section class="how-it-works">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Choose Service</h4>
+        <p>Select the service you need.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Book Time</h4>
+        <p>Pick a convenient time slot.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Relax</h4>
+        <p>Our expert handles everything.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="container" id="contact">
-  <div class="contact-block">
-    <h2>Ready to get started?</h2>
-    <p>Contact our Gurgaon support team for immediate assistance.</p>
-    <div class="contact-details">
-      <div><b>Phone</b>+91 7985555982</div>
-      <div><b>WhatsApp</b>+91 7985555982</div>
-      <div><b>Email</b>anuragtripathi2602@gmail.com</div>
-    </div>
-    <p style="margin-top: 40px; font-size: 0.85rem; opacity: 0.6;">Serving DLF, Sohna Road, Cyber Hub, and Sector 14-110.</p>
-  </div>
+<!-- CTA -->
+<section class="final-cta">
+  <h2>Need Help at Home?</h2>
+  <p>Book a trusted local expert in Gurgaon today.</p>
+  <a href="tel:+917985555982" class="btn">Call Now</a>
 </section>
 
-<footer>
-  <p>© 2025 GrihSeva Home Services Gurgaon • Built for Trust • Clean Blue Edition</p>
-</footer>
+
+<div id="footer"></div>
+
+
+
+<script>
+  fetch("navbar.html")
+  .then(r => r.text())
+  .then(d => document.getElementById("navbar").innerHTML = d);
+</script>
+<script>
+  fetch("/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
 
 </body>
-<script>
-fetch("navbar.html").then(r=>r.text()).then(d=>document.getElementById("navbar").innerHTML=d);
-</script>
 </html>

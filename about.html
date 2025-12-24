@@ -144,9 +144,16 @@
     </div>
 </div>
 
-<footer>
-    © 2025 GrihSeva • Serving Gurgaon with Pride
-</footer>
+<div id="footer"></div>
+
+<script>
+  fetch("/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
 
 </body>
 <script>
